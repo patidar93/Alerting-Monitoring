@@ -12,7 +12,7 @@ public class GraphiteWriter {
        Writer writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"));
        String time = String.valueOf(System.currentTimeMillis() / 1000);
        writer.write(
-               "prod.dfw1.brand-network-batch-processor-1.app.nbpsvc-prod1001_brand_dfw1_brand-network-batch-processor_prod.wapOfflineJob.exception.dst.6.count.count 1 "
+               "$path 1 "
                        + time + "\n");
        writer.flush();
 
